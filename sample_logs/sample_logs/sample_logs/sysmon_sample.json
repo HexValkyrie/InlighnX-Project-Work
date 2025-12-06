@@ -6,9 +6,3 @@
   "Hostname": "HOST-01",
   "timestamp": "2025-12-02T11:22:33Z"
 }
-
-
-mkdir -p sample_logs
-# create the two files using your editor, then:
-git add sample_logs/
-git commit -m "feat: add sanitized sample logs for demo"
