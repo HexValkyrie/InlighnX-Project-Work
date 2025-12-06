@@ -25,14 +25,29 @@ Hybrid Corporate + Technical Security Report
 ```
 **Executive Summary**
 
-> **TVA is a machine-learning powered correlation engine that detects multi-stage attacks by correlating system logs, network telemetry, user behavior, and known threat actor patterns—automatically delivering attack chain context to SOC Analysts.**
->
+> **The Threat Vortex Analyzer (TVA) is an advanced, machine-learning-driven correlation engine engineered to identify early-stage and multi-stage cyberattacks with high precision. TVA analyzes system logs, network telemetry, user activity baselines, anomaly patterns, and threat actor behaviors, then automatically stitches together the attack chain so SOC analysts don’t waste time hunting for context.
+Where traditional SIEM platforms trigger alerts after a threshold is crossed, TVA shifts the paradigm.
+It captures the subtle, low-signal indicators—staging actions, probing attempts, odd access patterns, lateral movement preparation, and privilege-misuse footprints—that standard tools routinely overlook.
+This project is specifically crafted for:
+L1 SOC Analysts, Ethical Hackers, Blue Teamers, Detection Engineers, Threat Hunters, and anyone working in active defense operations who wants deeper visibility into attack progression.
+TVA exists to strengthen defense teams by giving them something they rarely get:
+early warning, behavioral correlation, and real-time attack context.**
 > Designed for: **L1 SOC Analysts, Ethical Hackers, Detection Engineers, Blue Teamers.**
 
-The Threat Vortex Analyzer (TVA) is an innovative, behavior-based, early-warning detection system designed to help Security Operations Centers (SOC) identify cyberattacks before they escalate.
-Traditional SIEMs alert analysts after attackers cross certain thresholds. TVA flips the script — it catches the weak signals, pre-attack indicators, and staging activities that typical tools ignore.
+---
 
-This project blends Ethical Hacking mindset + SOC defensive analysis and demonstrates command over:
+>**Notes & Ethics**
+
+TVA should only be deployed on systems, networks, and log sources where you have explicit authorization.
+
+Do not commit sensitive organizational data, IP addresses, credentials, or internal logs to this repository.
+
+All logs included in this project are synthetic and created for demonstration and analysis purposes.
+Replace them with sanitized or mock datasets when testing or showcasing your implementation.
+
+This project aligns with ethical hacking principles and is intended solely for defensive cybersecurity research and skill development.
+
+**This project blends Ethical Hacking mindset + SOC defensive analysis and demonstrates command over:**
 
 Threat modeling
 MITRE ATT&CK
@@ -42,6 +57,7 @@ Early-warning detection
 Python automation
 
 TVA is a unique and original project — designed to represent a new class of SOC tools: Predictive Defense Engines.
+
 ---
 
 **Project Scope
@@ -425,6 +441,35 @@ Expand ATT&CK mapping
 Add automatic triage suggestions
 Create alerting webhook for SOC tools
 
+**Create & activate virtualenv (recommended):**
+
+```
+python3 -m venv venv
+source venv/bin/activate     # macOS / Linux
+venv\Scripts\activate        # Windows
+```
+
+**Install dependencies:**
+
+```
+pip install -r requirements.txt
+```
+
+**Run the TVA demo:**
+
+```
+python tva.py --input sample_logs/windows_evtx_sample.json
+```
+
+**Check output:**
+
+```
+output/results.json
+output/dashboard.csv
+```
+
+---
+
 # **Conclusion**
 
 TVA demonstrates advanced defensive reasoning by detecting pre-attack behaviors before standard tools raise alerts.
@@ -521,7 +566,19 @@ Technique: T1059.001 PowerShell
 | T1078        | Valid Accounts    | ✔️          |
 
 ---
+**How it works (high level)**
 
+Load config (IOCs, sigma rules, MITRE map)
+
+Parse one or more log files (JSON/EVTX converted to JSON)
+
+Run IOC matching, sigma-style pattern checks and MITRE map detection
+
+Compute TVAScore per event and export to CSV / JSON
+
+Use exported CSV in spreadsheet or BI tool for dashboarding
+
+---
 #  **Roadmap**
 
 * [ ] Add C2 Detection Module
