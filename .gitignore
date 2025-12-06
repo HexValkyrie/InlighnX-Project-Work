@@ -1,35 +1,42 @@
-# Byte-compiled / cache
+# Byte-compiled Python / caches
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# Virtual environments / env files
 venv/
 .env/
 env/
+*.env
 
-# OS files
+# Build / distribution folders
+build/
+dist/
+*.egg-info/
+
+# Logs, dumps, output, pcap, event logs (never commit)
+*.log
+*.pcap
+*.pcapng
+*.evtx
+output/
+logs/
+dump/
+*.dump
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS / System files
 .DS_Store
 Thumbs.db
 
-# Python packaging
-dist/
-build/
-*.egg-info/
-
-# Logs and outputs
-output/
-*.log
-*.evtx
-*.pcap
-*.pcapng
-
-# IDEs
-.vscode/
-.idea/
-
-# Secrets (never commit)
+# Credentials / Secrets (never commit)
 *.key
 *.pem
 *.crt
 secrets.json
+config.local.json
