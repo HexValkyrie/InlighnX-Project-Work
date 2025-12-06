@@ -1,0 +1,6 @@
+{
+    "EventID": 10,
+    "SourceImage": "C:\\Windows\\System32\\lsass.exe",
+    "TargetImage": "C:\\Users\\komal\\Desktop\\dump.exe",
+    "RuleName": "lsass_dump"
+}
