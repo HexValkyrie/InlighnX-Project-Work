@@ -1,0 +1,9 @@
+{
+  "EventID": 4688,
+  "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "CommandLine": "powershell.exe -enc SQBtAG0AZQBkAGkAYQB0AGU=",
+  "User": "COMPANY\\demo-user",
+  "ParentImage": "explorer.exe",
+  "Hostname": "HOST-01",
+  "timestamp": "2025-12-01T03:45:10Z"
+}
