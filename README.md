@@ -64,6 +64,17 @@ ML models (future enhancement)
 
 ---
 
+---
+
+## 🔖 What’s in this repo
+- `tva.py` — main detection & scoring engine (Python prototype)
+- `configs/` — detection rules, IOC feeds, MITRE mapping
+- `sample_logs/` — synthetic sample logs to run the demo
+- `output/` — generated results and dashboard CSVs
+- `docs/TVA_Project_Report.md` — professional project report (export to PDF)
+- `assets/` — architecture / flowchart / dashboard images (upload PNGs here)
+
+---
 #  **Methodology**
 
 TVA uses a hybrid approach inspired by:
