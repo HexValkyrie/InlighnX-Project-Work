@@ -1,0 +1,12 @@
+{
+    "powershell_encoded": {
+        "technique": "T1059.001",
+        "tactic": "Execution",
+        "description": "PowerShell execution with encoded commands"
+    },
+    "lsass_dump": {
+        "technique": "T1003",
+        "tactic": "Credential Access",
+        "description": "Credential Dumping Activity"
+    }
+}
