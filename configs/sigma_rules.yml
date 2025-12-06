@@ -1,0 +1,11 @@
+title: Suspicious PowerShell Base64 Execution
+id: 1001
+description: Detects base64-encoded PowerShell commands
+logsource:
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: powershell.exe
+    CommandLine|contains: " -enc "
+condition: selection
+level: high
