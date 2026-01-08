@@ -517,8 +517,8 @@ Cyber threat modeling
 ### **1. Clone**
 
 ```bash
-git clone https://github.com/yourusername/Threat-Vector-Analyzer.git
-cd Threat-Vector-Analyzer
+git clone https://github.com/HexValkyrie/InlighnX-Project-Work.git
+cd InlighnX-Project-Work
 ```
 
 ### **2. Install Requirements**
