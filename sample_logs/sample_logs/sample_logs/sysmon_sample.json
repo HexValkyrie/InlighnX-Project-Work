@@ -1,0 +1,8 @@
+{
+  "EventID": 10,
+  "SourceImage": "C:\\Windows\\System32\\lsass.exe",
+  "TargetImage": "C:\\Users\\demo\\Desktop\\dump.exe",
+  "RuleName": "lsass_dump",
+  "Hostname": "HOST-01",
+  "timestamp": "2025-12-02T11:22:33Z"
+}

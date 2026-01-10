@@ -1,0 +1,49 @@
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs and env files
+venv/
+.env
+.env.*
+env/
+.envrc
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and outputs (never commit)
+output/
+logs/
+*.log
+*.evtx
+*.pcap
+*.pcapng
+*.dump
+*.traces
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets / keys
+*.key
+*.pem
+*.crt
+secrets.json
+config.local.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / web artifacts (if any)
+node_modules/
